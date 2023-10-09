@@ -5,6 +5,14 @@
 [telescope.nvim]: https://github.com/nvim-telescope/telescope.nvim
 [thinca/vim-quickrun]: https://github.com/thinca/vim-quickrun
 
+## Setup
+
+To load the extension
+
+```lua
+require('telescope').load_extension('quickrun')
+```
+
 ## Usage
 
 Show runners
