@@ -7,7 +7,7 @@ return previewers.new_buffer_previewer {
   title = 'Config',
   define_preview = function (self, entry, status)
     local name = entry.value
-    local config = plugin.configs[name]
+    local config = plugin.configs()[name]
 
     local lines = {}
 

@@ -11,9 +11,9 @@ return function (opts)
   opts = opts or {}
 
   local results = {}
-  for name, _ in pairs(plugin.configs) do
-    -- plugins.configs has name
-    if plugin.configs[name] ~= nil then
+  local configs = plugin.configs()
+  for name, _ in pairs(configs) do
+    if configs[name] ~= nil then
       table.insert(results, name)
     end
   end
