@@ -32,7 +32,7 @@ return function (opts)
     },
     sorter = sorters.fuzzy_with_index_bias(),
     previewer = previewer,
-    attach_mappings = function(prompt_bufnr, map)
+    attach_mappings = function(prompt_bufnr, _)
       actions.select_default:replace(function()
         actions.close(prompt_bufnr)
         local selection = state.get_selected_entry()

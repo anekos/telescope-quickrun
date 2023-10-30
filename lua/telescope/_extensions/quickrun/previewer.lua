@@ -5,7 +5,7 @@ local plugin = require('telescope._extensions.quickrun.plugin')
 
 return previewers.new_buffer_previewer {
   title = 'Config',
-  define_preview = function (self, entry, status)
+  define_preview = function (self, entry, _)
     local name = entry.value
     local config = plugin.configs()[name]
 
