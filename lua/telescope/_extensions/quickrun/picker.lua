@@ -36,6 +36,8 @@ return function (opts)
       actions.select_default:replace(function()
         actions.close(prompt_bufnr)
         local selection = state.get_selected_entry()
+        vim.b.telescope_quickrun_last = selection.value
+        vim.g.telescope_quickrun_last = selection.value
         vim.cmd('QuickRun ' .. selection.value)
       end)
       return true
